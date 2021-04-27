@@ -66,6 +66,31 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+/* Global Classes */
+.border-box{
+    border: 2px solid var(--fourth);
+    border-radius: 7px;
+    box-shadow: 0 0 7px var(--second);
+}
+.push-up{
+    color: var(--third);
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+.push-up:hover{
+    color: var(--fourth);
+    transform: translateY(-5px);
+}
+.dis-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.animated{
+    animation: open 1.5s ease-in-out;
+}
+
+
 body{
     background-color: var(--first);
     color: var(--fourth);
@@ -76,8 +101,6 @@ body{
 /* HEADER */
 .header{
     align-items: center;
-    color: var(--third);
-    display: flex;
     font-size: 2rem;
     justify-content:space-between;
     margin-bottom: 2rem;
@@ -105,14 +128,7 @@ body{
 
 /* HEADER NAV-ITEM */
 .header .nav-item{
-    cursor: pointer;
     margin-right: 1rem;
-    transform: translateY(0px);
-    transition: transform 0.3s ease-in-out;
-}
-.header .nav-item:hover{
-    color: var(--fourth);
-    transform: translateY(-5px);
 }
 .header .nav-item:first-child{
     color:var(--fourth);
@@ -122,14 +138,12 @@ body{
 /* HOME CONTENT */
 .home-content{
     align-items: center;
-    display: flex;
     flex-direction: column;
 }
 
 /* HOME CONTENT TITLE */
 .home-content .title{
     display: flex;
-    flex-wrap: wrap;
     font-size: 10vw;
 }
 .home-content .title *{
@@ -146,8 +160,6 @@ body{
 
 /* ABOUT-CONTENT */
 .about-content{
-    display: flex;
-    flex-wrap: wrap;
     font-size: 1.5rem;
     justify-content: center;
 }
@@ -162,39 +174,21 @@ body{
     max-width:30%;
 }
 .about-content aside img{
-    border: 2px solid var(--fourth);
-    border-radius: 7px;
-    box-shadow: 0 0 7px var(--second);
     max-width: 70%;
-
 }
 
 /* ABOUT-CONTENT SECTION */
 .about-content section{
-    border: 2px solid var(--third);
-    border-radius: 7px;
-    box-shadow: 0 0 7px var(--second);
     margin: 0 0 1.5rem 1.5rem;
     padding: 1rem;
     padding-top: 0;
-    max-width: 55%;
-    
+    max-width: 55%; 
 }
 .about-content section a,.about-content section span{
-    color: var(--third);
     display: inline-block;
     text-decoration: underline wavy;
-    transform: translateY(0);
-    transition: transform 0.2s ease-in-out;
-}
-.about-content section a:hover,.about-content section span:hover{
-    color: var(--fourth);
-    cursor: pointer;
-    transform: translateY(-5px);
 }
 .about-content section .skills{
-    display: flex;
-    flex-wrap: wrap;
     font-size: 3rem;
     justify-content: space-evenly;
 }
@@ -204,17 +198,11 @@ body{
 
 /* PROJECT-CONTENT */
 .project-content{
-    display: flex;
-    flex-wrap: wrap;
     justify-content:center;
 }
 
 /* PROJECT */
 .project{
-    background-color: var(--first);
-    border: 2px solid var(--fourth);
-    border-radius: 7px;
-    box-shadow: 0 0 7px var(--second);
     display: grid;
     grid-template-rows: 70px 0.5fr 1fr 0.5fr;
     padding: 0.4rem;
@@ -224,15 +212,12 @@ body{
 
 /* PROJECT H2 */
 .project h2{
-    border: 2px solid var(--fourth);
-    border-radius: 7px;
     text-align: center;
     align-self: center;
 }
 
 /* PROJECT IMG */
 .project img{
-    /* border: 3px solid var(--fourth); */
     border-radius: 7px;
     margin: auto;
     max-width: 100%;
@@ -274,10 +259,8 @@ body{
     color: var(--second);
 }
 
-
 /* CONTACT CONTENT */
 .contact-content{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -292,9 +275,6 @@ body{
     text-decoration: none;
 }
 .contact-content .buttons i{
-    border: 2px solid var(--fourth);
-    border-radius: 7px;
-    box-shadow: 0 0 7px var(--second);
     padding: 1rem;
     margin: 1rem;
 }
@@ -306,16 +286,12 @@ body{
 /* CONTACT CONTENT FORM */
 .contact-content form{
     align-items: center;
-    display: flex;
     flex-direction: column;
     margin-bottom: 10vh;
     width: 80%;
 }
 .contact-content form *{
     background-color: var(--first);
-    border: 2px solid var(--fourth);
-    border-radius: 7px;
-    box-shadow: 0 0 7px var(--second);
     color: var(--fourth);
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -381,5 +357,8 @@ body{
     }
     .about-content aside{
         max-width: 100%;
+    }
+    .home-content .bio{
+        margin-bottom: 27vh;
     }
 }

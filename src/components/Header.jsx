@@ -15,7 +15,7 @@ function Header(props) {
     }
    }
     return(
-        <div className="header">
+        <div className="header dis-flex">
             <svg width="200" height="150" viewBox="100 0 460 460" xmlns="http://www.w3.org/2000/svg">
                 <title>Logo-Test</title>
                 <g>
@@ -33,10 +33,10 @@ function Header(props) {
             <p onClick={mobileMenu} className="mobile-menu"><i class="fas fa-bars"></i></p>
             <p onClick={mobileMenu} className="mobile-menu-x"><i class="fas fa-times"></i></p>
             <nav className="desktop">
-                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item">home</p>
-                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item">projects</p>
-                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item">contact me</p>
-                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item">about me</p>
+                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item push-up">home</p>
+                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item push-up">projects</p>
+                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item push-up">contact me</p>
+                <p onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} className="nav-item push-up">about me</p>
             </nav>
         </div>
         )

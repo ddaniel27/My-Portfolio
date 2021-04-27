@@ -15,7 +15,7 @@ function App(){
         :[...document.getElementsByClassName("nav-item")][2].setAttribute("style","color:var(--fourth);text-decoration: wavy underline;");
     }
     return(
-        <div>
+        <div className="second-root animated">
             <Header
             showChange={showChange}
             headerSelect={selectContent}/>

@@ -3,26 +3,19 @@ import About from "./content/About";
 import Contact from "./content/Contact";
 import Home from "./content/Home";
 import Project from "./content/Project";
-import projects from "../projects";
 
 function Content(props){
     switch(props.contentSelected){
         case "home":
-            return <Home/>;
+            return <div><Home/></div>;
         case "projects":
-            return(
-                <div className="project-content">
-                    {projects.map(project => <Project title={project.title} description={project.description} imgUrl={project.imgUrl} imgAlt={project.imgAlt}
-                    gitUrl={project.gitUrl} webUrl={project.webUrl} />)}
-                </div>
-                );
+            return <div><Project/></div>;
         case "contact me":
-            return <Contact/>;
-        
+            return <div><Contact/></div>;
         case "about me":
-            return <About showChange={props.showChange} headerSelect={props.headerSelect}/>;
+            return <div><About showChange={props.showChange} headerSelect={props.headerSelect}/></div>;
         default:
-            return <About showChange={props.showChange} headerSelect={props.headerSelect}/>;
+            return <div><Home/></div>;
     }
 }
 

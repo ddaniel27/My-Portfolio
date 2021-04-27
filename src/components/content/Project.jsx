@@ -1,18 +1,12 @@
 import React from "react";
+import Card from "./Card";
+import projects from "../../projects";
 
-function Project(props){
+function Project(){
     return (
-        <div className="project">
-        <h2>{props.title}</h2>
-            <img src={props.imgUrl} alt={props.imgAlt}></img>
-            <details>
-                <summary>Read More</summary>
-                <p>{props.description}</p>
-            </details>
-            <div className="links">
-                <a href={props.gitUrl}><i class="fab fa-github"></i></a>
-                <a href={props.webUrl}><i class="fas fa-pager"></i></a>
-            </div>
+        <div className="project-content dis-flex">
+            {projects.map(project => <Card title={project.title} description={project.description} imgUrl={project.imgUrl} imgAlt={project.imgAlt}
+            gitUrl={project.gitUrl} webUrl={project.webUrl} />)}
         </div>
     );
 }
