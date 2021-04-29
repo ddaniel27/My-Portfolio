@@ -1,16 +1,17 @@
 import React from "react";
+import social from "../../social";
 
 function Contact(){
     return (
     <div className="contact-content dis-flex">
         <div className="buttons">
-           <a href="/"> <i className="fab fa-github border-box"></i> </a>
-           <a href="/"> <i className="fab fa-linkedin-in border-box"></i> </a>
+           <a href={social.github}> <i className="fab fa-github border-box"></i> </a>
+           <a href={social.linkedin}> <i className="fab fa-linkedin-in border-box"></i> </a>
         </div>
-        <form className="dis-flex">
-            <input className="border-box" name="email" type="text" placeholder="Your Email"/>
-            <textarea className="border-box" type="text" placeholder="Write a nice message :)"/>
-            <button className="border-box" type="submit">Send!</button>
+        <form action="mailto:danieldorado27@gmail.com" className="dis-flex">
+            <input className="border-box" name="subject" type="text" placeholder="Subject"/>
+            <textarea className="border-box" name="body" placeholder="Write a nice message :)"/>
+            <button className="border-box" type="submit" value="Send">Send!</button>
         </form>
     </div>
     );
