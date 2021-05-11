@@ -16,7 +16,7 @@ function Header(props) {
    }
     return(
         <div className="header dis-flex">
-            <svg width="200" height="150" viewBox="100 0 460 460" xmlns="http://www.w3.org/2000/svg">
+            <svg onClick={(event)=>{props.showChange(event.target);props.headerSelect(event.target);}} width="200" height="150" viewBox="100 0 460 460" xmlns="http://www.w3.org/2000/svg">
                 <title>Logo-Test</title>
                 <g>
                 <title>Layer 1</title>
