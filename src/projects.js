@@ -1,4 +1,13 @@
 const projects =[
+    {
+        title: "Frontend Mentor Challenge",
+        description: "Working on improve my frontend skill. A home/landing page for a crowfounding with some functionality.",
+        imgUrl: "https://i.imgur.com/YLYIK1f.png",
+        gifUrl: "https://i.imgur.com/Eb9dxu4.gif",
+        imgAlt: "Crowfound screenshot",
+        gitUrl: "https://github.com/ddaniel27/FrontendMentor-JR-CH2",
+        webUrl: "https://ddaniel27.github.io/FrontendMentor-JR-CH2/"
+    },
     //Keeper app
     {
         title: "Keeper app",
@@ -8,6 +17,15 @@ const projects =[
         imgAlt: "Keeper app screenshot",
         gitUrl: "https://github.com/ddaniel27/Keeper-app.git",
         webUrl: "https://ddaniel27.github.io/Keeper-app/"
+    },
+    {
+        title: "Frontend Mentor Challenge",
+        description: "Working on improve my frontend skill. A landing page for a blog.",
+        imgUrl: "https://i.imgur.com/pvcafuP.png",
+        gifUrl: "https://i.imgur.com/Nyyfd56.gif",
+        imgAlt: "Blogr screenshot",
+        gitUrl: "https://github.com/ddaniel27/FrontendMentor-JR-CH1",
+        webUrl: "https://ddaniel27.github.io/FrontendMentor-JR-CH1/"
     },
     //Simple pomodoro
     {
@@ -81,7 +99,7 @@ const projects =[
     },
     //Frontend Mentor NBCH1
     {
-        title: "Frontend Mentor Challenge 1",
+        title: "Frontend Mentor Challenge",
         description: "I feel like I need more practice with frontend, that's why I started building challenges in frontend mentor, this was my first challenge and I learned some cool stuff building it and also reading other solutions from really skilled people. Not just reading theory you can improve your skills, you need to put your hands on practice to internalize all that knowledge.",
         imgUrl: "https://i.imgur.com/PSLrn3b.png",
         gifUrl: "https://i.imgur.com/PSLrn3b.png",
@@ -99,26 +117,6 @@ const projects =[
         gitUrl: "https://github.com/ddaniel27/FrontendMentor-NB-CH2",
         webUrl: "https://ddaniel27.github.io/FrontendMentor-NB-CH2/"
     },
-    //Secrets
-    {
-        title: "Secrets",
-        description: "Do you want to say something but also do you want to keep it secret? Don't worry, secrets is here, but shhh... don't tell to anybody. I've learned a lot about authentication and put my previous knowledge about security here! Also I need to work in OAuth2.",
-        imgUrl: "https://i.imgur.com/BlMmC1M.png",
-        gifUrl: "https://i.imgur.com/Q87QMiu.gif",
-        imgAlt: "Secrets screenshot",
-        gitUrl: "https://github.com/ddaniel27/Secrets-app",
-        webUrl: "#"
-    },
-    //Love calculator
-    {
-        title: "Love calculator",
-        description: "This was done in half day of February, and it doesn't give you a real love value (or maybe yes, it depends on you). I also learned some things about file connections and basic structuration on HTML, CSS and JS.",
-        imgUrl: "https://i.imgur.com/xljslb3.png",
-        gifUrl: "https://i.imgur.com/xljslb3.png",
-        imgAlt: "Love calculator screenshot",
-        gitUrl: "https://github.com/ddaniel27/Love-Calculator/",
-        webUrl: "https://ddaniel27.github.io/Love-Calculator/"
-    }
 ];
 
 export default projects;
