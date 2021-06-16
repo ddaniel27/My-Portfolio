@@ -1,6 +1,15 @@
 const projects =[
     {
         title: "Frontend Mentor Challenge",
+        description: "Working on improve my frontend skill. A home/landing page for a design company.",
+        imgUrl: "https://i.imgur.com/NXucij1.png",
+        gifUrl: "https://i.imgur.com/7xffCE8.gif",
+        imgAlt: "Designer screenshot",
+        gitUrl: "https://github.com/ddaniel27/FrontendMentor-JR-CH3",
+        webUrl: "https://ddaniel27.github.io/FrontendMentor-JR-CH3/"
+    },
+    {
+        title: "Frontend Mentor Challenge",
         description: "Working on improve my frontend skill. A home/landing page for a crowfounding with some functionality.",
         imgUrl: "https://i.imgur.com/YLYIK1f.png",
         gifUrl: "https://i.imgur.com/Eb9dxu4.gif",
